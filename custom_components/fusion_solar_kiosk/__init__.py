@@ -52,7 +52,7 @@ class FusionSolarKioskEnergyEntity(CoordinatorEntity, SensorEntity):
 
     @property
     def name(self) -> str:
-        return f'{self._kioskName} ({self._kioskId}) - {self._nameSuffix}'
+        return f'{self._kioskName} - {self._nameSuffix}'
 
     @property
     def state(self) -> float:
@@ -60,7 +60,7 @@ class FusionSolarKioskEnergyEntity(CoordinatorEntity, SensorEntity):
 
     @property
     def unique_id(self) -> str:
-        return f'{DOMAIN}-{self._kioskId}-{self._idSuffix}'
+        return f'{DOMAIN}-{self._idSuffix}'
 
     @property
     def unit_of_measurement(self) -> str:
@@ -108,7 +108,7 @@ class FusionSolarKioskPowerEntity(CoordinatorEntity, Entity):
 
     @property
     def name(self):
-        return f'{self._kioskName} ({self._kioskId}) - {self._nameSuffix}'
+        return f'{self._kioskName} - {self._nameSuffix}'
 
     @property
     def state(self):
@@ -116,7 +116,7 @@ class FusionSolarKioskPowerEntity(CoordinatorEntity, Entity):
 
     @property
     def unique_id(self) -> str:
-        return f'{DOMAIN}-{self._kioskId}-{self._idSuffix}'
+        return f'{DOMAIN}-{self._idSuffix}'
 
     @property
     def unit_of_measurement(self):
