@@ -100,7 +100,7 @@ class FusionSolarKioskPowerEntity(CoordinatorEntity, Entity):
 
     @property
     def device_class(self):
-        return DEVICE_CLASS_ENERGY
+        return DEVICE_CLASS_POWER
 
     @property
     def state_class(self) -> str:
